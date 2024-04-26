@@ -9,8 +9,8 @@ from .api import api
 
 def save():
 
-    project_id = 'big-query-421322'
-    table_id = 'big-query-421322.Query.social'
+    project_id = os.getenv('PROYECTID')
+    table_id = os.getenv('TABLEID')
     #table_name = 'social'
     #parquet_file_path = '/Users/alonsoartavia/Desktop/big query/datos_ejemplo.parquet'
 
