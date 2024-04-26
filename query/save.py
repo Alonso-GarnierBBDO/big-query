@@ -14,7 +14,7 @@ def save():
     #table_name = 'social'
     #parquet_file_path = '/Users/alonsoartavia/Desktop/big query/datos_ejemplo.parquet'
 
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/alonsoartavia/Desktop/keys/big-query-421322-fced5871b817.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv('GOOGLEAPPLICATIONCREDENTIALS')
     client = bigquery.Client(project = project_id)
 
     api(client, bigquery)
